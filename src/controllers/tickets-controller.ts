@@ -3,7 +3,7 @@ import ticketService from "@/services/tickets-service";
 import { Request, Response } from "express";
 import httpStatus from "http-status";
 
-type RequestAuthMiddleware = Request & { userId: number };
+export type RequestAuthMiddleware = Request & { userId: number };
 
 export async function getTicketTypes(req: Request, res: Response) {
   try {
